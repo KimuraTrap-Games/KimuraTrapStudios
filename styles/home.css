@@ -23,7 +23,6 @@
 /* Ensure the wrapper takes up the full height */
 .content-wrapper {
     display: grid;
-    min-height: 100vh;
     justify-items: center;
     align-items: center;
 }
@@ -51,7 +50,7 @@
     max-width: 400px; /* Control max size of images */
     height: auto;
     border: solid white .5px;
-    box-shadow: 5px 5px lightgrey;
+    box-shadow: 5px 5px 5px lightgrey;
 }
 
 .background i {
