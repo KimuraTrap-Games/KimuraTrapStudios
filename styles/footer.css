@@ -1,0 +1,28 @@
+.footer-wrapper {
+    background-color: #1e1e1e;
+    color: lightgrey;
+    padding: 10px;
+    border: solid white .3px;
+    overflow-x: hidden;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: white;
+}
+
+.studio-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

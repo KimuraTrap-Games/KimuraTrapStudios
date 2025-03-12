@@ -6,8 +6,8 @@
     z-index: 9999;
     border-bottom: solid 1px black;
     top: 0;
-    width: 100%;
     padding: 10px 0;
+    border: solid white .4px;
 }
 
 .header {
@@ -22,10 +22,17 @@
     font-size: 25px;
 }
 
-.links-wrapper {
+.links-wrapper a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    font-size: 13px;
+    padding: 3px;
+}
+
+.links-wrapper a:hover {
+    color: white;
 }
 
 .page-links a {
@@ -39,6 +46,8 @@
     margin-left: 20px;
     text-decoration: none;
 }
+
+/* Header Media Queries */
 
 @media (max-width: 768px) {
     .header {

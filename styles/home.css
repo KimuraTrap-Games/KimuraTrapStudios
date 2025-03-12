@@ -1,26 +1,67 @@
 .background {
     position: relative;
     z-index: 0; /* Ensures it's behind the text */
+    overflow-x: hidden;
 }
 
-.background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; /* Covers the full height */
-    object-fit: cover;
-    z-index: -1; /* Ensures it's behind any content */
+.hero-content h1 {
+    font-size: 30px;
 }
 
 .content-wrapper {
     position: relative; /* Allows content to be on top of the image */
     z-index: 1;
     padding: 50px;
-    color: white;
+    color: lightgrey;
 }
 
 .content {
     position: relative;
     z-index: 2; /* Makes sure the text is in front of the background image */
+}
+
+/* Ensure the wrapper takes up the full height */
+.content-wrapper {
+    display: grid;
+    min-height: 100vh;
+    justify-items: center;
+    align-items: center;
+}
+
+/* Grid setup for the content area */
+.content {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column layout, adjust as needed */
+    grid-template-rows: auto;  /* Allow content height to adjust */
+    gap: 20px; /* Space between items */
+    text-align: center; /* Center text */
+}
+
+/* Background div setup */
+.background {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; /* 3 rows: 2 images and 1 paragraph */
+    gap: 10px; /* Space between items */
+    justify-items: center; /* Center all items horizontally */
+}
+
+.background img {
+    width: 100%;
+    max-width: 400px; /* Control max size of images */
+    height: auto;
+    border: solid white .5px;
+    box-shadow: 5px 5px lightgrey;
+}
+
+.background i {
+    font-size: 12px;
+}
+
+.background p {
+    width: 100%;
+    max-width: 600px; /* Control max width for the paragraph */
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
 }
