@@ -1,0 +1,49 @@
+.consult-form-wrapper {
+    margin: 50px;
+    border: solid darkblue;
+    box-shadow: 5px 5px blue;
+    width: 400px; /* Set a fixed width for the form container */
+    margin: 50px auto; /* Center the form wrapper horizontally */
+    padding: 20px; /* Add some padding to the wrapper */
+}
+
+.consult-form-wrapper h1 {
+    text-align: center; /* Center the header text */
+    margin-bottom: 20px; /* Add some spacing below the header */
+}
+
+.consult-form-wrapper form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    justify-content: flex-start; /* Align form elements to the top */
+    align-items: stretch; /* Ensure inputs and labels stretch to the form's full width */
+    width: 100%; /* Ensure the form takes up the full width of the wrapper */
+}
+
+.consult-form-wrapper form label {
+    margin-bottom: 15px; /* Add spacing between form fields */
+}
+
+.consult-form-wrapper form input,
+.consult-form-wrapper form textarea {
+    width: 100%; /* Make input fields and textarea take full width */
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.consult-form-wrapper button {
+    width: 100%; /* Make the button take full width of the form */
+    padding: 10px 20px;
+    margin-top: 20px; /* Add some spacing above the button */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+
+    background-color: darkblue;
+    color: white;
+    border: solid blue;
+}
+
+.consult-form-wrapper button:hover {
+    background-color: blue;
+    border: solid white;
+}

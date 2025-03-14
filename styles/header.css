@@ -20,6 +20,7 @@
 .title {
     font-weight: bold;
     font-size: 25px;
+    text-shadow: darkblue 2px 2px;
 }
 
 .links-wrapper a {

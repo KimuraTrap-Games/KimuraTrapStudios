@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/team.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/consult.css">
 </head>
 <body>
     <!-- Header -->
@@ -19,13 +19,13 @@
             <div class="title">
                 <h1>KimuraTrap Studios LLC</h1>
             </div>
-
+            
             <div class="links-wrapper">
                 <div class="page-links">
                     <!-- Page Links Go Here -->
                     <a href="index.html">Homepage</a>
                     <a href="services.html">Services</a>
-                    <a href="consult.html">Request a Consultation</a>
+                    <a href="team.html">Meet the Team</a>
                     <a href="https://www.youtube.com/@kimuratrapstudios" target="_blank">YouTube</a>
                 </div>
 
@@ -38,33 +38,34 @@
 
     <!-- Content -->
     <div class="content-wrapper">
-            <h1>MEET THE TEAM</h1>
-        <div class="team-wrapper">
-            <div class="team-member">
-                <img src="/images/ScottWedding.jpg" alt="">
-                <h2>Scott Lee</h2>
-                <h4>Owner/Lead Programmer</h4>
-                <h4>U.S. Army Veteran</h4>
-                <a href="https://scottleedev.com/" target="_blank">Portfolio Site</a>
-            </div>
+        <div class="consult-form-wrapper">
+            <h1>Request a Consultation</h1>
+            <form
+                action="https://formspree.io/f/xwplpedq"
+                method="POST"
+                >
+                <label>
+                    Name of Company or Individual
+                    <input type="email" name="email">
+                </label>
 
-            <div class="team-member">
-                <img src="/images/MattBoat.jpg" alt="">
-                <h2>Matt Cusworth</h2>
-                <h4>Contractor/Programmer</h4>
-            </div>
+                <label>
+                    Email
+                    <input type="email" name="email">
+                </label>
 
-            <div class="team-member">
-                <img src="/images/Allan.jpg" alt="">
-                <h2>Allan Haeffner</h2>
-                <h4>Contractor/Programmer</h4>
-            </div>
+                <label>
+                    Phone #
+                    <input type="email" name="email">
+                </label>
 
-            <!-- <div class="team-member">
-                <img src="headshot" alt="">
-                <h2>Name</h2>
-                <h4>Position</h4>
-            </div> -->
+                <label>
+                    Brief Description of Project
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
         </div>
     </div>
 
