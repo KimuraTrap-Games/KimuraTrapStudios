@@ -15,8 +15,9 @@
     border: solid white .5px;
     box-shadow: 8px 8px 8px lightgrey;
 
-    height: 200px;
-    width: 150px;
+    height: 250px;
+    width: 200px;
+    padding: 30px;
 }
 
 .team-member a {
