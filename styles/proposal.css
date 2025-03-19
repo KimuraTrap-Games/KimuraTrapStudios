@@ -1,0 +1,72 @@
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Default styling for larger screens (desktops) */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 1200px (tablets and small desktops) */
+@media (max-width: 1199px) {
+    .container {
+        padding: 15px;
+    }
+    ul {
+        padding-left: 15px;
+    }
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+/* For screens smaller than 992px (tablets in landscape, larger phones) */
+@media (max-width: 991px) {
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+    ul {
+        padding-left: 15px;
+    }
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+/* For screens smaller than 768px (tablets in portrait, small phones) */
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+    ul {
+        padding-left: 10px;
+    }
+    li {
+        margin-bottom: 6px;
+    }
+}
+
+/* For screens smaller than 480px (very small phones) */
+@media (max-width: 479px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    ul {
+        padding-left: 10px;
+    }
+    li {
+        margin-bottom: 6px;
+    }
+}
