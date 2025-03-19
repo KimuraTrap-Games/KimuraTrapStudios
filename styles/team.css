@@ -6,9 +6,9 @@
 .team-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     color: lightgrey;
     margin: 0 auto;
     max-width: 900px;
