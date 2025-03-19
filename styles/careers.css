@@ -2,43 +2,41 @@
     margin: 50px;
     border: solid darkblue;
     box-shadow: 5px 5px blue;
-    width: 400px; /* Set a fixed width for the form container */
-    margin: 50px auto; /* Center the form wrapper horizontally */
-    padding: 20px; /* Add some padding to the wrapper */
+    width: 400px; /* Default width for desktops */
+    margin: 50px auto;
+    padding: 20px;
 }
 
 .careers-wrapper h1 {
-    text-align: center; /* Center the header text */
-    margin-bottom: 20px; /* Add some spacing below the header */
+    text-align: center;
+    margin-bottom: 20px;
 }
-
 
 .careers-wrapper form {
     display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-    justify-content: flex-start; /* Align form elements to the top */
-    align-items: stretch; /* Ensure inputs and labels stretch to the form's full width */
-    width: 100%; /* Ensure the form takes up the full width of the wrapper */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
 }
 
 .careers-wrapper form label {
-    margin-bottom: 15px; /* Add spacing between form fields */
+    margin-bottom: 15px;
 }
 
 .careers-wrapper form input,
 .careers-wrapper form textarea {
-    width: 100%; /* Make input fields and textarea take full width */
+    width: 100%;
     padding: 10px;
     margin-top: 5px;
-    box-sizing: border-box; /* Include padding in the width calculation */
+    box-sizing: border-box;
 }
 
 .careers-wrapper button {
-    width: 100%; /* Make the button take full width of the form */
+    width: 100%;
     padding: 10px 20px;
-    margin-top: 20px; /* Add some spacing above the button */
-    cursor: pointer; /* Change cursor to indicate it's clickable */
-
+    margin-top: 20px;
+    cursor: pointer;
     background-color: darkblue;
     color: white;
     border: solid blue;
@@ -47,4 +45,26 @@
 .careers-wrapper button:hover {
     background-color: blue;
     border: solid white;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) { /* Tablet view */
+    .careers-wrapper {
+        width: 80%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile view */
+    .careers-wrapper {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .careers-wrapper button {
+        padding: 8px 15px;
+        margin-top: 15px;
+    }
 }

@@ -2,7 +2,7 @@
     background-color: #1e1e1e;
     color: lightgrey;
     padding: 10px;
-    border: solid white .3px;
+    border: solid white 0.3px;
     overflow-x: hidden;
 }
 
@@ -10,11 +10,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .contact-info a {
     color: lightgrey;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .contact-info a:hover {
@@ -26,4 +28,26 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap; /* Enable wrapping on smaller screens */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { /* Tablets */
+    .contact-info, .studio-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px; /* Add spacing between elements */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile Devices */
+    .footer-wrapper {
+        padding: 15px;
+    }
+
+    .contact-info, .studio-info {
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
 }

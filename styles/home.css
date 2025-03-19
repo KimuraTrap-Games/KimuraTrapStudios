@@ -2,10 +2,19 @@
     position: relative;
     z-index: 0; /* Ensures it's behind the text */
     overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; /* 3 rows: 2 images and 1 paragraph */
+    gap: 15px; /* Adjusted space between items */
+    justify-items: center;
+    padding: 20px;
 }
 
 .hero-content h1 {
     font-size: 30px;
+    color: lightgrey;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px black;
 }
 
 .content-wrapper {
@@ -13,54 +22,73 @@
     z-index: 1;
     padding: 50px;
     color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .content {
     position: relative;
-    z-index: 2; /* Makes sure the text is in front of the background image */
-}
-
-/* Ensure the wrapper takes up the full height */
-.content-wrapper {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-}
-
-/* Grid setup for the content area */
-.content {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 column layout, adjust as needed */
-    grid-template-rows: auto;  /* Allow content height to adjust */
-    gap: 20px; /* Space between items */
-    text-align: center; /* Center text */
-}
-
-/* Background div setup */
-.background {
+    z-index: 2; /* Ensures the text is in front of the background image */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto; /* 3 rows: 2 images and 1 paragraph */
-    gap: 10px; /* Space between items */
-    justify-items: center; /* Center all items horizontally */
+    grid-template-rows: auto;
+    gap: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+/* Responsive Background Images */
 .background img {
     width: 100%;
-    max-width: 400px; /* Control max size of images */
+    max-width: 400px;
     height: auto;
-    border: solid white .5px;
+    border: solid white 0.5px;
     box-shadow: 5px 5px 5px lightgrey;
+    transition: transform 0.3s;
 }
 
-.background i {
-    font-size: 12px;
+.background img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 .background p {
     width: 100%;
-    max-width: 600px; /* Control max width for the paragraph */
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 10px auto;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
+    color: lightgrey;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 30px;
+    }
+
+    .background img {
+        max-width: 300px;
+    }
+
+    .background p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .background img {
+        max-width: 250px;
+    }
+
+    .background p {
+        font-size: 0.9rem;
+    }
 }

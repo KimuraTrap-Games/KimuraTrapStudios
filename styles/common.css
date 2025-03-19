@@ -5,4 +5,23 @@ body {
 
 h1 {
     text-shadow: darkblue 2px 2px;
+    color: white; /* Ensure visibility on black background */
+    margin: 20px;
+    text-align: center;
+    font-size: 2.5em; /* Default for larger screens */
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* Tablet view */
+    h1 {
+        font-size: 2em;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile view */
+    h1 {
+        font-size: 1.8em;
+        margin: 10px;
+    }
 }
