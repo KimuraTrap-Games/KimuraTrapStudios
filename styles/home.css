@@ -17,6 +17,10 @@
     text-shadow: 2px 2px 4px black;
 }
 
+#hero-heading {
+    color: red;
+}
+
 .content-wrapper {
     position: relative; /* Allows content to be on top of the image */
     z-index: 1;
@@ -44,9 +48,9 @@
 /* Responsive Background Images */
 .background img {
     width: 50%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
-    max-height: 400px;
+    max-height: 300px;
     border: solid white 0.5px;
     box-shadow: 5px 5px 5px lightgrey;
     transition: transform 0.3s;
