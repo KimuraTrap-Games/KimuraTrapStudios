@@ -24,6 +24,13 @@
     text-shadow: darkblue 2px 2px;
 }
 
+.logo-image img {
+    height: 100px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 .links-wrapper {
     display: flex;
     justify-content: space-between;
