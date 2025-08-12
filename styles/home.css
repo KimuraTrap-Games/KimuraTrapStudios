@@ -43,9 +43,10 @@
 
 /* Responsive Background Images */
 .background img {
-    width: 100%;
+    width: 50%;
     max-width: 400px;
     height: auto;
+    max-height: 400px;
     border: solid white 0.5px;
     box-shadow: 5px 5px 5px lightgrey;
     transition: transform 0.3s;
