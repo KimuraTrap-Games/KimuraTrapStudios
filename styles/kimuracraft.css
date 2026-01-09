@@ -1,9 +1,20 @@
+body {
+    overflow-x: hidden;
+}
+
 .hero-content img {
-    height: 100%;
+    height: 400px;
     object-fit: cover;
+    position: relative;
+    right: -20%;
 }
 
 .aditional-info a {
     color: white;
     text-decoration: none;
+}
+
+.additional-info {
+    text-decoration: none;
+    color: white;
 }
