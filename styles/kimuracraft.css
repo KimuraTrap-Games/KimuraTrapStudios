@@ -1,0 +1,9 @@
+.hero-content img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.aditional-info a {
+    color: white;
+    text-decoration: none;
+}
