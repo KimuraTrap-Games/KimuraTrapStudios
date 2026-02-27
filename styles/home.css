@@ -47,52 +47,94 @@
 
 /* Announcements Section */
 .announcements {
+    text-align: center;
     color: red;
+    padding: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
-.announcements button {
-    background: url('/images/discord.png') no-repeat center;
-    background-size: 100%;
+.announcements h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
 
-    width: 100%;
-    max-width: 500px;
-    aspect-ratio: 3 / 1;
+.announcements h5 {
+    font-size: 1em;
+    margin-top: 10px;
+    font-style: italic;
+    color: #fff;
+}
 
-    border: none;
+/* Discord banner container */
+.discord-banner {
+    display: inline-block;
     cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
 
-    font-size: 16px;
-    font-weight: bold;
-    color: #3a2a12;
-
-    padding: 10px;
-
+/* Discord banner image: transparent, no border/shadow */
+.discord-banner .banner-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border: 0;
+    background: none;
+    box-shadow: none;
     transition: transform 0.2s ease;
 }
 
-.announcements a {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
+/* Hover effect */
+.discord-banner .banner-img:hover {
+    transform: scale(1.05);
 }
 
-.banner-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.banner-websites {
-    background: url('/images/websites.png') no-repeat center;
-    background-size: 100%;
-
-    width: 100%;
+.websites-banner {
     max-width: 100%;
-    aspect-ratio: 3 / 1;
+    width: 100%;
+    height: auto;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    transition: transform 0.2s ease;
+}
 
+.website-section .websites-banner {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    transition: transform 0.2s ease;
+}
 
-    padding: 10px;
+/* Tablet and up: adjust size */
+@media (min-width: 768px) {
+    .discord-banner .banner-img {
+        max-width: 400px;
+    }
+}
+
+/* Laptop/Desktop */
+@media (min-width: 1024px) {
+    .discord-banner .banner-img {
+        max-width: 500px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+    .discord-banner .banner-img {
+        max-width: 600px;
+    }
+}
+
+/* Ultrawide */
+@media (min-width: 1920px) {
+    .discord-banner .banner-img {
+        max-width: 700px;
+    }
 }
 
 
@@ -147,48 +189,4 @@
     .background p {
         font-size: 0.9rem;
     }
-}
-
-/* Tablet */
-@media (min-width: 768px) {
-
-.banner-btn {
-    max-width: 650px;
-    font-size: 20px;
-}
-
-}
-
-/* Laptop */
-@media (min-width: 1024px) {
-
-.banner-btn {
-    max-width: 800px;
-    font-size: 24px;
-}
-
-}
-
-/* Desktop */
-@media (min-width: 1440px) {
-
-.banner-btn {
-    max-width: 1000px;
-    font-size: 28px;
-}
-
-}
-
-/* Ultrawide */
-@media (min-width: 1920px) {
-
-.banner-btn {
-    max-width: 1200px;
-    font-size: 32px;
-}
-
-}
-
-.banner-btn:hover {
-    transform: scale(1.05);
 }
