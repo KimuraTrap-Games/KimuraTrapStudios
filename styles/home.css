@@ -51,7 +51,7 @@
 }
 
 .announcements button {
-    background: url('/images/button-banner.png') no-repeat center;
+    background: url('/images/discord.png') no-repeat center;
     background-size: 100%;
 
     width: 100%;
@@ -81,6 +81,18 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.banner-websites {
+    background: url('/images/websites.png') no-repeat center;
+    background-size: 100%;
+
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 3 / 1;
+
+
+    padding: 10px;
 }
 
 
