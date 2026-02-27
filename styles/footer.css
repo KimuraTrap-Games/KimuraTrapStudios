@@ -42,7 +42,12 @@
 
 @media (max-width: 480px) { /* Mobile Devices */
     .footer-wrapper {
-        padding: 15px;
+        padding: 0px;
+        font-size: 15px;
+    }
+
+    .contact-info {
+        font-size: 13px;
     }
 
     .contact-info, .studio-info {
