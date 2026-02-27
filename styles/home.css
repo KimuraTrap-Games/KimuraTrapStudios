@@ -45,6 +45,45 @@
     margin: 0 auto;
 }
 
+/* Announcements Section */
+.announcements {
+    color: red;
+}
+
+.announcements button {
+    background: url('/images/button-banner.png') no-repeat center;
+    background-size: 100%;
+
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 3 / 1;
+
+    border: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: #3a2a12;
+
+    padding: 10px;
+
+    transition: transform 0.2s ease;
+}
+
+.announcements a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.banner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
 /* Responsive Background Images */
 .background img {
     width: 50%;
@@ -96,4 +135,48 @@
     .background p {
         font-size: 0.9rem;
     }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+.banner-btn {
+    max-width: 650px;
+    font-size: 20px;
+}
+
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+
+.banner-btn {
+    max-width: 800px;
+    font-size: 24px;
+}
+
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+
+.banner-btn {
+    max-width: 1000px;
+    font-size: 28px;
+}
+
+}
+
+/* Ultrawide */
+@media (min-width: 1920px) {
+
+.banner-btn {
+    max-width: 1200px;
+    font-size: 32px;
+}
+
+}
+
+.banner-btn:hover {
+    transform: scale(1.05);
 }
