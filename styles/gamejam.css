@@ -57,6 +57,17 @@
     margin-top:10px;
 }
 
+.join-the-jam button {
+    padding: 12px 24px;
+    color: white;
+    background-color: red;
+    border: 2px solid blue;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /* ============================= */
 /* LISTS                         */
 /* ============================= */
