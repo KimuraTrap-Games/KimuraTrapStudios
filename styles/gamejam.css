@@ -1,0 +1,170 @@
+/* ============================= */
+/* KTS GAME JAM PAGE STYLES     */
+/* ============================= */
+
+.content-wrapper{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+/* ============================= */
+/* HERO SECTION                  */
+/* ============================= */
+
+.gamejam-hero{
+    text-align:center;
+    padding:60px 20px;
+    margin-bottom:40px;
+
+    background:linear-gradient(135deg,#7a0000,#ff4500);
+    border-radius:8px;
+    color:white;
+}
+
+.gamejam-hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.gamejam-hero h2{
+    font-size:1.8rem;
+    margin-bottom:10px;
+    font-weight:400;
+}
+
+.gamejam-hero p{
+    font-size:1.2rem;
+    opacity:.9;
+}
+
+/* ============================= */
+/* SECTION STYLE                 */
+/* ============================= */
+
+.gamejam-section{
+    margin-bottom:50px;
+}
+
+.gamejam-section h2{
+    margin-bottom:15px;
+    padding-bottom:8px;
+    border-bottom:2px solid #ff4500;
+}
+
+.gamejam-section h3{
+    color:#ff784e;
+    margin-top:10px;
+}
+
+/* ============================= */
+/* LISTS                         */
+/* ============================= */
+
+.gamejam-section ul{
+    margin-top:10px;
+    padding-left:20px;
+}
+
+.gamejam-section li{
+    margin-bottom:8px;
+}
+
+/* ============================= */
+/* JUDGES                        */
+/* ============================= */
+
+.judges-list{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.judges-list li{
+    list-style:none;
+    background:#1a1a1a;
+    padding:10px 18px;
+    border-radius:6px;
+    border:1px solid #333;
+}
+
+/* ============================= */
+/* SCHEDULE GRID                 */
+/* ============================= */
+
+.schedule-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.schedule-item{
+    background:#1a1a1a;
+    border:1px solid #333;
+    border-radius:6px;
+    padding:15px;
+    text-align:center;
+}
+
+.schedule-item strong{
+    display:block;
+    color:#ff784e;
+    margin-bottom:5px;
+}
+
+/* ============================= */
+/* PRIZE BOX                     */
+/* ============================= */
+
+.prize-box{
+    background:#1a1a1a;
+    border:1px solid #333;
+    padding:20px;
+    border-radius:6px;
+}
+
+.prize-box strong{
+    color:#ffd700;
+}
+
+/* ============================= */
+/* DONATION SECTION              */
+/* ============================= */
+
+.donation-box{
+    background:#141414;
+    border:1px solid #333;
+    border-left:4px solid #ff4500;
+    padding:20px;
+    border-radius:6px;
+}
+
+/* ============================= */
+/* LINKS                         */
+/* ============================= */
+
+.gamejam-section a{
+    color:#ff784e;
+    text-decoration:none;
+}
+
+.gamejam-section a:hover{
+    text-decoration:underline;
+}
+
+/* ============================= */
+/* MOBILE                        */
+/* ============================= */
+
+@media(max-width:768px){
+
+    .gamejam-hero h1{
+        font-size:2.2rem;
+    }
+
+    .gamejam-hero h2{
+        font-size:1.4rem;
+    }
+
+}

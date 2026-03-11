@@ -18,7 +18,7 @@
 
     <!-- Google AdSense snippet -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4060258983214851"
-     crossorigin="anonymous">
+        crossorigin="anonymous">
     </script>
 </head>
 <body>
@@ -40,10 +40,6 @@
                     <a href="consult.html" title="Request a consultation with KimuraTrap Studios">Request a Consultation</a>
                     <a href="https://www.youtube.com/@kimuratrapstudios" target="_blank" title="Visit KimuraTrap Studios on YouTube">YouTube</a>
                 </div>
-
-                <div class="social-links">
-                    <!-- Social Links Go Here -->
-                </div>
             </div>
         </div>
     </header>
@@ -52,6 +48,75 @@
     <main class="content-wrapper" role="main">
         <div class="content">
             <div class="background">
+            <!-- Game Jam Announcement (Temporarily at the top of the page, comes down after event) -->
+                <div class="game-jam">
+                    <h1>KTS Game Jam 1</h1>
+                    <h2>
+                        We are excited to announce our first ever <i>KTS Game Jam</i>! 
+                        This is a great opportunity for aspiring game developers to showcase their skills and creativity. 
+                        Join us for this exciting event and let your imagination run wild!
+                    </h2>
+                    <a href="gamejam.html">Learn More</a>
+
+                    <section class="countdown-section">
+
+                        <br>
+
+                        <h2>Theme Announcement</h2>
+
+                        <div id="countdown">
+
+                            <div class="time-box">
+                                <span id="days">00</span>
+                                <p>Days</p>
+                            </div>
+
+                            <div class="time-box">
+                                <span id="hours">00</span>
+                                <p>Hours</p>
+                            </div>
+
+                            <div class="time-box">
+                                <span id="minutes">00</span>
+                                <p>Minutes</p>
+                            </div>
+
+                            <div class="time-box">
+                                <span id="seconds">00</span>
+                                <p>Seconds</p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <script>
+                        const announcementDate = new Date("2026-03-23T19:00:00").getTime();
+
+                        const timer = setInterval(function(){
+
+                            const now = new Date().getTime();
+                            const distance = announcementDate - now;
+
+                            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                            document.getElementById("days").innerHTML = days;
+                            document.getElementById("hours").innerHTML = hours;
+                            document.getElementById("minutes").innerHTML = minutes;
+                            document.getElementById("seconds").innerHTML = seconds;
+
+                            if(distance < 0){
+                                clearInterval(timer);
+                                document.getElementById("countdown").innerHTML = "Theme Revealed!";
+                            }
+
+                        },1000);
+                    </script>
+                </div>
+                
             <!-- Hero Section -->
             <section class="hero" aria-labelledby="hero-heading">
                 <div class="hero-content">
@@ -112,9 +177,13 @@
                     </p>
                     <a href="consult.html" title="Request a consultation with KimuraTrap Studios">Request a Consultation</a>
                     <a href="careers.html" title="Explore career opportunities with KimuraTrap Studios">Careers</a>
-                    <a href="https://www.youtube.com/@kimuratrapstudios" target="_blank" title="Visit KimuraTrap Studios on YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
+                    <a href="https://www.youtube.com/@kimuratrapstudios" target="_blank" title="Visit KimuraTrap Studios on YouTube"><i class="fab fa-youtube"></i></a>
+
+                    <div class="social-links">
+                        <!-- Social Links Go Here -->
+                        <a href="https://www.facebook.com/profile.php?id=61574580297237" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/kimuratrapstudios/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
             <hr>
