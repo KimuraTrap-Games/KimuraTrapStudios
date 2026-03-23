@@ -64,59 +64,10 @@
 
                         <h2>Theme Announcement</h2>
 
-                        <div id="countdown">
-
-                            <div class="time-box">
-                                <span id="days">00</span>
-                                <p>Days</p>
-                            </div>
-
-                            <div class="time-box">
-                                <span id="hours">00</span>
-                                <p>Hours</p>
-                            </div>
-
-                            <div class="time-box">
-                                <span id="minutes">00</span>
-                                <p>Minutes</p>
-                            </div>
-
-                            <div class="time-box">
-                                <span id="seconds">00</span>
-                                <p>Seconds</p>
-                            </div>
-
-                        </div>
+                        <h1>THE FLOOR IS LAVA</h1>
+                        <p>Get ready to unleash your creativity and design a game that revolves around the thrilling concept of "The Floor is Lava"! Whether it's a platformer, puzzle, or adventure game, we want to see how you can turn this classic childhood game into an exciting and immersive gaming experience. Let your imagination run wild as you create a world where players must navigate through dangerous environments, avoid obstacles, and find innovative ways to stay off the floor. We can't wait to see the unique and creative games that emerge from this theme!</p>
 
                     </section>
-
-                        <script>
-
-                            const announcementDate = new Date("2026-03-22T23:59:59-04:00").getTime();
-
-                            const timer = setInterval(function(){
-
-                                const now = new Date().getTime();
-                                const distance = announcementDate - now;
-
-                                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                                document.getElementById("days").innerHTML = days;
-                                document.getElementById("hours").innerHTML = hours;
-                                document.getElementById("minutes").innerHTML = minutes;
-                                document.getElementById("seconds").innerHTML = seconds;
-
-                                if(distance < 0){
-                                    clearInterval(timer);
-                                    document.getElementById("countdown").innerHTML = "Theme Revealed!";
-                                }
-
-                            },1000);
-
-                        </script>
                 </div>
                 
             <!-- Hero Section -->
